@@ -11,14 +11,22 @@
 #Problem 1
 #Given the information below:
 
-x = [ [5,2,3], [10,8,9] ] 
-heros = [{'real_name':  'Bruce Wayne', 'hero_name' : 'Batman'}, {'real_name' : 'Tony Stark', 'hero_name' : 'Ironman'}]
-franchise = {
+def arrays():
+  x = [ [5,2,3], [10,8,9] ] 
+  heros = [{'real_name':  'Bruce Wayne', 'hero_name' : 'Batman'}, {'real_name' : 'Tony Stark', 'hero_name' : 'Ironman'}]
+  franchise = {
     'dc' : ['Batman', 'Aquaman', 'Wonder Woman', 'Superman'],
     'marvel' : ['Hulk', 'Thor', 'Black Widow']
-}
-z = [ {'x': 10, 'y': 20} ]
-#1.) How would you change the value 10 in x to 15?  Once you're done x should then be [ [5,2,3], [15,8,9] ].  
+  }
+  z = [ {'x': 10, 'y': 20} ]
+ #1.) How would you change the value 10 in x to 15?  Once you're done x should then be [ [5,2,3], [15,8,9] ]. 
+  x[1]=[15,8,9]
+  return(x)
+
+print(arrays())
+
+
+
 #2.) How would you change the hero_name of the first hero from 'Batman' to "Dark Knight"?
 #3.) For the franchise dictionary, how would you change 'Aquaman' to 'Daredevil'?
 #4.) For z, how would you change the value 20 to 30?
